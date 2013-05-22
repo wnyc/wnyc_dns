@@ -1,0 +1,10 @@
+#!/usr/bin/python
+
+from goodbye_rackspace.dns.rackspace import load
+from sys import argv
+
+if __name__ == "__main__":
+    if len(argv) != 3:
+        print "Usage: goodbye_rackspace_dns rackspace_username rackspace_apikey"
+    for domain in load(*argv[1:]):
+        print repr(domain)
