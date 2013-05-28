@@ -60,8 +60,8 @@ def main(argv=None, stdin=None, stdout=None, stderr=None):
     try:
         argv = FLAGS(argv)[1:]
         if  argv[0] not in COMMANDS:
-            stderr.write("%s\\nUsage: %s update_id_addresses\\n%s\n" %
-                         (e, sys.argv[0], FLAGS))
+            stderr.write("\\nUsage: %s update_id_addresses\\n%s\n" %
+                         (sys.argv[0], FLAGS))
             return 1
     except gflags.FlagsError, e:
         stderr.write("%s\\nUsage: %s update_id_addresses\\n%s\n" %
