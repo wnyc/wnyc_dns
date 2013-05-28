@@ -13,6 +13,10 @@ To change all of the IP addresses from 1.2.3.4 to 4.3.2.1 while excluding any de
 
     wnyc_dns --live --username=<username> --apikey=<secret>    update_ip_addresses A:1.2.3.4 A:4.3.2.1  host1 host2 host3
 
+To dump all of hte IP addresses to stdout
+
+    wnyc_dns --username=<username> --apikey=<secret>  dump_ip_addresses
+
 
 
 
